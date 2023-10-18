@@ -6,7 +6,7 @@ metadata:
   description: Testing repo
   annotations:
     backstage.io/techdocs-ref: dir:.
-    argocdLinks: https://argocdexample.com
+    argocd.argoproj.io/application-URL: https://argocd.example.com/applications/my-app
 spec:
   type: service
   lifecycle: experimental
