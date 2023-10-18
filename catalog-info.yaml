@@ -1,13 +1,22 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Test-repo
-  title: Test-repo
-  description: Testing repo
+  name: artist-web
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
   annotations:
-    backstage.io/techdocs-ref: dir:.
-    argocd.argoproj.io/application-URL: https://argocd.example.com/applications/my-app
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
 spec:
-  type: service
-  lifecycle: experimental
-  owner: argocd.argoproj.io/application-URL
+  type: website
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
