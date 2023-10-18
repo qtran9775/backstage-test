@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Test-repo
+  title: Test-repo
+  description: Testing repo
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    //add argoCD backstage annotation and link to https://argocd.com
+    argocd.argoproj.io/instance: argocd
+spec:
+  type: service
+  lifecycle: experimental
+  owner: Quynh Tran
