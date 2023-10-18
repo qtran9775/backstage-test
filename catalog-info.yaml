@@ -6,7 +6,6 @@ metadata:
   description: Testing repo
   annotations:
     backstage.io/techdocs-ref: dir:.
-    //add argoCD backstage annotation and link to https://argocd.com
     argocd.argoproj.io/instance: argocd
 spec:
   type: service
